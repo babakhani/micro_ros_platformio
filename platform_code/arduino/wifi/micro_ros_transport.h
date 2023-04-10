@@ -1,4 +1,4 @@
-#include <WiFi.h>
+//#include <WiFi.h>
 #include <WiFiUdp.h>
 
 struct micro_ros_agent_locator {
@@ -7,11 +7,11 @@ struct micro_ros_agent_locator {
 };
 
 static inline void set_microros_wifi_transports(char * ssid, char * pass, IPAddress agent_ip, uint16_t agent_port){
-	WiFi.begin(ssid, pass);
+	//WiFi.begin(ssid, pass);
 
-    while (WiFi.status() != WL_CONNECTED) {
-      delay(500);
-    }
+    //while (WiFi.status() != WL_CONNECTED) {
+      //delay(500);
+    //}
 
     static struct micro_ros_agent_locator locator;
     locator.address = agent_ip;

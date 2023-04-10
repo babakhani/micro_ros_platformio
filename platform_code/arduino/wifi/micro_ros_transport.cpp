@@ -2,7 +2,6 @@
 
 #include <micro_ros_platformio.h>
 
-#include <WiFi.h>
 #include <WiFiUdp.h>
 
 #include <uxr/client/util/time.h>
